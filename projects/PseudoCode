@@ -1,0 +1,37 @@
+// make_a_cat_origami
+// obtain a square piece of paper
+
+// make_margins
+For (2 times)
+{ 
+  fold_corners();
+    align corner facing you ;
+    match corners together ;
+    fold straight line ;
+    turn to other corner to face you;
+}
+
+// create_teeth
+Looking at the bottom triangle, fold away from you till the right angle on the triangle touches the middle of the previous triangle
+Fold top-most corner back down
+Fold towards you halfway across the triangle just made
+
+Flip paper;
+
+// create_nose
+Repeate lines 13 and 14 but with line 13's fold being on the top of the teeth
+
+// create_face
+Fold down corners on the side of whole paper to create the face
+
+// create_ears
+// Fold 2 flaps away from you
+Looking at the right angle on the side, measure 1/5 of the distance of the side down and make a straight line to the opposide side, and fold
+Repeate on the opposite side
+
+// fold_forehead
+Take the right angle thats the most away from you and fold till it meets the previous ear folds
+
+Flip paper;
+
+// Done!!
