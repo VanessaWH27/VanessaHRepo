@@ -1,37 +1,84 @@
-// make_a_cat_origami
-// obtain a square piece of paper
+// MakeCatOrigami
 
-// make_margins
-For (2 times)
-{ 
-  fold_corners();
-    align corner facing you ;
-    match corners together ;
-    fold straight line ;
-    turn to other corner to face you;
+// Start!!
+
+ObtainSupplies; // Obtain a square piece of paper and a marker
+CreateFoldOutlines; // Fold symmetrically by matching opposite corners to each other, repeat for each corner
+AlignPaper; // Align the paper so that a corner is pointing at you
+
+
+{
+FoldNose; // Fold the corner nearest to you away from you, make the crease 1/3 of the way from the corner to the middle point
+  2FoldNose; // Fold paper again, halfway towards you
+  3FoldNose; // Fold the corner farthest from you down the fold outline to create 1 triangle
+  4FoldNose; // Fold corner closest to you away and create crease directly on top of previous folds
+  5FoldNose; // Fold crease halfway down
 }
 
-// create_teeth
-Looking at the bottom triangle, fold away from you till the right angle on the triangle touches the middle of the previous triangle
-Fold top-most corner back down
-Fold towards you halfway across the triangle just made
 
-Flip paper;
+FlipPaper; // Flip paper around to see the other side
 
-// create_nose
-Repeate lines 13 and 14 but with line 13's fold being on the top of the teeth
 
-// create_face
-Fold down corners on the side of whole paper to create the face
+{
+FoldEars; // Take both triangle corners on the right/left and fold down the middle guideline of "Fold Outline"
+  FoldEar1; // Take the folded angle on the left, make a crease connecting point 1 which is 1/6 down on the left side and point 2 which is 1/3 down on the right side
+  FoldEar2; // Take the folded angle on the left, make a crease connecting point 1 which is 1/6 down on the right side and 1/3 down on the left
+}
 
-// create_ears
-// Fold 2 flaps away from you
-Looking at the right angle on the side, measure 1/5 of the distance of the side down and make a straight line to the opposide side, and fold
-Repeate on the opposite side
 
-// fold_forehead
-Take the right angle thats the most away from you and fold till it meets the previous ear folds
+FoldForehead; // Fold triangle furthest away from you down to fill in the triangle made by both Ears
+FlipPaper; // Flip paper around to see the other side
 
-Flip paper;
+
+{
+DrawEyes; // Use marker to draw 2 circles on symmetrically on the center on each half of the cat
+DrawWhiskers; // Draw 3 vertical lines under the previously drawn eyes going to the right and to the left
+DrawNose; // Color in nose created in "FoldNose", the top triangle
+}
+
 
 // Done!!
+
+
+
+------ 
+
+// MakeCatOrigami
+
+// Start!!
+
+ObtainSupplies;
+CreateFoldOutlines;
+AlignPaper; 
+
+{
+FoldNose; 
+  2FoldNose;
+  3FoldNose;
+  4FoldNose; 
+  5FoldNose; 
+}
+
+
+FlipPaper;
+
+{
+FoldEars; 
+  FoldEar1; 
+  FoldEar2;
+}
+
+
+FoldForehead; 
+FlipPaper;
+
+
+{
+DrawEyes; 
+DrawWhiskers; 
+DrawNose;
+}
+
+
+// Done!!
+
