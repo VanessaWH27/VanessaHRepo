@@ -1,0 +1,43 @@
+int R = 255;
+int G = 255;
+int B = 255;
+
+int x = 5;
+int y = 5;
+final int d = 10;
+
+void setup(){
+  size(500, 800);
+  background(R, G, B);
+}
+
+void draw(){
+  // hair pt 1
+  fill(60, 46, 40);
+  rect(200, 150, 100, 130);
+  // face
+  fill(255, 219, 172);
+  ellipse(250, 200, 100, 100);
+  // eyes
+  fill(255, 255, 255);
+  ellipse(230, 190, 15, 15);
+  ellipse(270, 190, 15, 15);
+  fill(60, 46, 40);
+  ellipse(230, 190, 5, 5);
+  ellipse(270, 190, 5, 5);
+  // mouth
+  fill(255, 129, 203);
+  arc(250, 225, 20, 20, radians(0), radians(180));
+  // nose
+  fill(255, 255, 255);
+  ellipse(250, 210, 10, 10);
+  // hair pt 2
+  rotate(PI/4);
+  fill(60, 46, 40);
+  ellipse(305, -90, 90, 50);
+  // hair pt 3
+  rotate(PI/3);
+  fill(60, 46, 40);
+  ellipse(100, -240, 90, 50);
+  
+}
