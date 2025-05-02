@@ -25,7 +25,7 @@ class Environment{
  // Draws the frame to the screen
  void display(){
    
-   image(backgroundStars, 0, 0)
+   // Pimage(backgroundStars, 0, 0);
    
  }
    
